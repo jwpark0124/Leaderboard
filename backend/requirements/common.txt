@@ -4,4 +4,4 @@ djangorestframework-jwt
 django-cors-headers
 django-pydenticon
 pillow
-{% comment %} django-bootstrap4 {% endcomment %}
+django-bootstrap4
