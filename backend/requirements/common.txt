@@ -5,3 +5,5 @@ django-cors-headers
 django-pydenticon
 pillow
 django-bootstrap4
+
+
