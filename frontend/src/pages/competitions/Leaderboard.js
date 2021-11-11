@@ -1,8 +1,8 @@
-﻿import React from 'react';
+﻿// import React from 'react';
 
-function Leaderboard({ leaderboard }) {
-  const { user, rank, score, round, submit } = leaderboard;
-  return <div></div>;
-}
+// function Leaderboard({ leaderboard }) {
+//   const { user, rank, score, round, submit } = leaderboard;
+//   return <div></div>;
+// }
 
-export default Leaderboard;
+// export default Leaderboard;

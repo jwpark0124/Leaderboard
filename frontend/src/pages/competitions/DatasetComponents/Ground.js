@@ -1,6 +1,7 @@
 ﻿import React, { useState } from 'react';
 import useAxios from 'axios-hooks';
 import Poster from './Poster';
+import { Link } from 'react-router-dom';
 import {
   faCube,
   faDatabase,
@@ -13,30 +14,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import KoreanQnAChallenges from '../CompetitionsDatesetContexts/KoreanQnAChallenges';
 
 function Ground() {
-  const [{ data: postList, loading, error }, refetch] = useAxios({
-    url: 'http://localhost:8000/api/posts/',
-  });
+  // const [{ data: postList, loading, error }, refetch] = useAxios({
+  //   url: 'http://localhost:8000/api/posts/',
+  // });
 
   return (
     <>
       <div className="bg-gray-100 flex flex-col flex-wrap justify-center items-center">
-        {postList &&
+        <Poster />
+        {/* {postList &&
           postList.map((poster) => {
             return <Poster poster={poster} key={poster.user} />;
-          })}
+          })} */}
         <div className="text-xl flex flex-wrap mt-10 p-4 justify-center items-center bg-red-300 w-2/3 rounded-t-2xl">
           진행중
         </div>
         <div className="bg-white flex flex-wrap py-5 justify-center items-center w-2/3 border-solid border-b border-opacity-20 border-gray-500 space-x-96">
           <div className="flex">
-            <div className="mr-5">
+            <Link to="/competitions/outline" className="mr-5">
               <FontAwesomeIcon icon={faCube} />
               <span className="text-base ml-2">개요</span>
-            </div>
-            <div className="mr-5">
+            </Link>
+            <Link to="/competitions/dataset" className="mr-5">
               <FontAwesomeIcon icon={faDatabase} />
               <span className="text-base ml-2">데이터</span>
-            </div>
+            </Link>
             <div className="mr-5">
               <FontAwesomeIcon icon={faCode} />
               <span className="text-base ml-2">베이스라인</span>
@@ -56,7 +58,9 @@ function Ground() {
           </div>
         </div>
         <div className="bg-white w-2/3  flex flex-col rounded-b-3xl mb-20">
-          {postList &&
+          <KoreanQnAChallenges />
+
+          {/* {postList &&
             postList.map((koreanQnAChallenges) => {
               return (
                 <KoreanQnAChallenges
@@ -64,7 +68,7 @@ function Ground() {
                   key={koreanQnAChallenges.user}
                 />
               );
-            })}
+            })} */}
         </div>
       </div>
     </>

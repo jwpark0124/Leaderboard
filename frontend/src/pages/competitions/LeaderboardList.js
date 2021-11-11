@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import useAxios from 'axios-hooks';
+// import useAxios from 'axios-hooks';
 import {
   faCube,
   faDatabase,
@@ -12,9 +12,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LeaderboardTable from './LeaderboardTable';
 
 function LeaderboardList() {
-  const [{ data: leaderboardList, loading, error }, refetch] = useAxios({
-    url: 'http://localhost:8000/api/puts/',
-  });
+  // const [{ data: leaderboardList, loading, error }, refetch] = useAxios({
+  //   url: 'http://localhost:8000/api/puts/',
+  // });
 
   return (
     <>
@@ -58,8 +58,8 @@ function LeaderboardList() {
         <div className="bg-white w-2/3 h-2/5  flex flex-col rounded-b-3xl board">
           <p className="m-4 text-yellow-500 text-sm">공개순위</p>
 
-          {loading && <div>Loading...</div>}
-          {error && <div>로딩 중에 에러가 발생했습니다.</div>}
+          {/* {loading && <div>Loading...</div>}
+          {error && <div>로딩 중에 에러가 발생했습니다.</div>} */}
           <table className="table-fixed justify-center items-center text-center">
             <thead className="bg-gray-100 border-t border-black border-opacity-50 not-italic">
               <tr className="text-xs h-8">
@@ -71,7 +71,7 @@ function LeaderboardList() {
               </tr>
             </thead>
             <tbody className="text-xs">
-              {leaderboardList &&
+              {/* {leaderboardList &&
                 leaderboardList.map((leaderboardTable) => {
                   return (
                     <LeaderboardTable
@@ -79,7 +79,7 @@ function LeaderboardList() {
                       key={leaderboardTable.pk}
                     />
                   );
-                })}
+                })} */}
             </tbody>
           </table>
         </div>

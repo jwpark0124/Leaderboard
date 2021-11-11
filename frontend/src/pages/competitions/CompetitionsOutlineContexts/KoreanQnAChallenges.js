@@ -2,14 +2,19 @@
 import styled from 'styled-components';
 
 function KoreanQnAChallenges({ koreanQnAChallenges }) {
-  const { title, explanation } = koreanQnAChallenges;
+  // const { title, explanation } = koreanQnAChallenges;
   const StyledUl = styled.ul``;
   const Styledli = styled.li``;
   return (
     <>
       <div className="mb-12">
-        <div className="mt-6 ml-4 text-lg">{title}</div>
-        <div className="mt-2 ml-4 text-base opacity-60">{explanation}</div>
+        <div className="mt-6 ml-4 text-lg">
+          2021 한국어 질의응답 AI 경진대회: 비디오 네러티브 질의응답 태스크
+          {/* {title} */}
+        </div>
+        <div className="mt-2 ml-4 text-base opacity-60">
+          {/* {explanation} */}
+        </div>
         <div className="mt-8 mx-4">
           <p className="mb-2 text-lg">1. 개요</p>{' '}
           <p>

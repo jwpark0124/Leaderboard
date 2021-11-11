@@ -7,25 +7,25 @@ function PostList() {
     store: { jwtToken },
   } = useAppContext();
 
-  const [postList, setPostList] = useState([]);
+  // const [postList, setPostList] = useState([]);
 
   const headers = { Authorization: `JWT ${jwtToken}` };
 
-  const [{ data: originPostList, loading, error }, refetch] = useAxios({
-    url: '/api/posts/',
-    headers,
-  });
+  // const [{ data: originPostList, loading, error }, refetch] = useAxios({
+  //   url: '/api/posts/',
+  //   headers,
+  // });
 
-  useEffect(() => {
-    setPostList(originPostList);
-  }, [originPostList]);
+  // useEffect(() => {
+  //   setPostList(originPostList);
+  // }, [originPostList]);
 
   return (
     <div>
-      {postList &&
+      {/* {postList &&
         postList.map((postList) => (
           <PostList postList={postList} key={postList.id} />
-        ))}
+        ))} */}
     </div>
   );
 }
