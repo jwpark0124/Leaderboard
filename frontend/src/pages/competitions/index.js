@@ -8,8 +8,8 @@ import Leaderboard from './Leaderboard';
 import LeaderboardList from './LeaderboardList';
 import Navbar from './CompetitionsLayoutComponents/Navbar';
 import Footer from './CompetitionsLayoutComponents/Footer';
-import Poster from './OutlineComponents/Poster';
-import Ground from './OutlineComponents/Ground';
+// import Poster from './OutlineComponents/Poster';
+// import Ground from './OutlineComponents/Ground';
 
 function Routes({ match }) {
   // const [{ data: postList, loading, error }, refetch] = useAxios({

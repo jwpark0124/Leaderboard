@@ -25,7 +25,7 @@ function Poster({ poster }) {
           </div>
           {/* <div className="flex m-3">{explanation}</div> */}
           {/* <div className="flex m-3">{explanation}</div> */}
-          <div className="flex m-3">00원</div>
+
           {/* <div className="flex m-3">{award}</div> */}
         </Link>
       </div>

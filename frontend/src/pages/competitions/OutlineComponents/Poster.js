@@ -19,11 +19,10 @@
               과학기술정보통신부,한국지능정보사회진흥원(NIA)
               {/* {host} */}
             </div>
-            <div className="block mt-3 ml-8">
-              <div className="opacity-60">대회상금</div>원{/* {award} */}
-            </div>
+
             <div className="block mt-3 ml-8">
               <div className="opacity-60">대회기간</div>
+              21년 11월 18일 ~ 21년 12월 10일
               <div>{/* {period1} ~ {period2} */}</div>
             </div>
             <div className="block mt-3 ml-8">
