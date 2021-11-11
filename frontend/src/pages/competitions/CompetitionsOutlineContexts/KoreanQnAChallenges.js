@@ -1,5 +1,7 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
+import submit from '../../../../src/assets/해커톤_참가신청서.hwp';
+import aiposter from '../../../../src/assets/AI_challenges_poster.jpeg';
 
 function KoreanQnAChallenges({ koreanQnAChallenges }) {
   // const { title, explanation } = koreanQnAChallenges;
@@ -15,6 +17,9 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
         <div className="mt-2 ml-4 text-base opacity-60">
           {/* {explanation} */}
         </div>
+
+        <img className="mt-4 ml-16 w-2/6" src={aiposter} alt="" />
+
         <div className="mt-8 mx-4">
           <p className="mb-2 text-lg">1. 개요</p>{' '}
           <p>
@@ -86,6 +91,18 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
               본 경진대회에 참가신청이 수락된 경우에만 데이터가 제공되며, 상기
               데이터는 본 대회의 참가 목적으로만 사용할 수 있으며 다른
               목적으로는 사용 불가함
+            </Styledli>
+          </StyledUl>
+          <hr />
+          <p className="mt-4 mb-2 text-lg">4. 참가신청</p>{' '}
+          <StyledUl>
+            <Styledli className="list-inside list-disc mb-2">
+              {' '}
+              *
+              <a className="underline text-blue-500 " href={submit} download>
+                첨부
+              </a>
+              된 참가 신청서를 작성하여 전자우편(jiseong@kaist.ac.kr)으로 제출
             </Styledli>
           </StyledUl>
           <hr />
