@@ -9,7 +9,7 @@ const Navbar = ({ toggle }) => {
       role="navigation"
     >
       <Link to="/" className="pl-8">
-        Teddysum
+        AI hackathon
       </Link>
 
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
