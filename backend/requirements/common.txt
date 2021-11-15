@@ -5,5 +5,6 @@ django-cors-headers
 django-pydenticon
 pillow
 django-bootstrap4
-
-
+scikit-learn
+django-jsonfield
+json

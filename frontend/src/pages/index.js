@@ -7,15 +7,19 @@ import AccountsRoutes from './account';
 
 import CompetitionsRoutes from './competitions';
 import Outline from './competitions/Outline';
+import Navbar from './competitions/CompetitionsLayoutComponents/Navbar';
+import Footer from 'components/AppLayoutComponents/Footer';
 
 function Root() {
   return (
     <>
+      <Navbar />
       <Route exact path="/Home" component={Home} />
       <Route exact path="/about" component={About} />
       <Route path="/account" component={AccountsRoutes} />
       <Route path="/competitions" component={CompetitionsRoutes} />
       <Route exact path="/" component={Outline} />
+      <Footer />
     </>
   );
 }

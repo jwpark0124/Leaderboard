@@ -22,8 +22,6 @@ function Routes({ match }) {
   };
   return (
     <>
-      <Navbar toggle={toggle} />
-
       <Route exact path={match.url + '/dataset'} component={Dataset} />
       <Route exact path={match.url + '/outline'} component={Outline} />
       <Route exact path={match.url + '/baseline'} component={Baseline} />
@@ -33,7 +31,6 @@ function Routes({ match }) {
         path={match.url + '/leaderboardlist'}
         component={LeaderboardList}
       />
-      <Footer />
     </>
   );
 }

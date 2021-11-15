@@ -1,6 +1,9 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
 import kqcimg from '../../../assets/koreanQnAChallenges.png';
+import nia from '../../../../src/assets/NIA.jpg';
+import kaist from '../../../../src/assets/한국판뉴딜.png';
+import sit from '../../../../src/assets/과학기술정보통신부.jpg';
 
 function KoreanQnAChallenges({ koreanQnAChallenges }) {
   const StyledUl = styled.ul``;
@@ -47,6 +50,11 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
             {lt}참고화면{gt}
           </p>
           <img src={kqcimg} alt="" />
+          <div class="flex flex-wrap justify-around mt-10 text-center">
+            <img class="w-32" src={sit} alt="" />
+            <img class="w-32" src={nia} alt="" />
+            <img class="w-32" src={kaist} alt="" />
+          </div>
         </div>
       </div>
     </>

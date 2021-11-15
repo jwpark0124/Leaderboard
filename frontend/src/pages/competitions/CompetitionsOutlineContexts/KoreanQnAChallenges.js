@@ -2,6 +2,9 @@
 import styled from 'styled-components';
 import submit from '../../../../src/assets/해커톤_참가신청서.hwp';
 import aiposter from '../../../../src/assets/AI_challenges_poster.jpeg';
+import nia from '../../../../src/assets/NIA.jpg';
+import kaist from '../../../../src/assets/한국판뉴딜.png';
+import sit from '../../../../src/assets/과학기술정보통신부.jpg';
 
 function KoreanQnAChallenges({ koreanQnAChallenges }) {
   // const { title, explanation } = koreanQnAChallenges;
@@ -10,7 +13,7 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
   return (
     <>
       <div className="mb-12">
-        <div className="mt-6 ml-4 text-lg">
+        <div className="mt-6 ml-4 md:text-md lg:text-lg">
           2021 한국어 질의응답 AI 경진대회: 비디오 네러티브 질의응답 태스크
           {/* {title} */}
         </div>
@@ -44,33 +47,6 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
               보기: 1. 한복, 2. 소방복, 3. 운동복, 4. 경찰복, 5. 수술복
             </Styledli>
           </StyledUl>
-          <p className="mt-4">주최</p>
-          <StyledUl>
-            <Styledli className="list-inside list-disc">
-              {' '}
-              과학기술정보통신부{' '}
-            </Styledli>
-            <Styledli className="list-inside list-disc">
-              한국지능정보사회진흥원(NIA)
-            </Styledli>
-          </StyledUl>
-          <p className="mt-4">주관</p>
-          <StyledUl>
-            <Styledli className="list-inside list-disc">
-              {' '}
-              (주)써로마인드{' '}
-            </Styledli>
-            <Styledli className="list-inside list-disc">KAIST</Styledli>
-            <Styledli className="list-inside list-disc">(주)테디썸</Styledli>
-            <Styledli className="list-inside list-disc">
-              (주)유클리드소프트
-            </Styledli>
-          </StyledUl>
-          <p className="mt-4 mb-2">
-            본 경진대회는 과학기술정보통신부가 주관하고,
-            한국지능정보사회진흥원이 지원하는 인공지능 학습용 데이터 구축 사업 -
-            비디오 네러티브 질의응답 데이터 과제의 지원을 받았습니다.
-          </p>
           <hr />
           <p className="mt-4 mb-2 text-lg">2. 과제</p>{' '}
           <StyledUl>
@@ -106,6 +82,28 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
             </Styledli>
           </StyledUl>
           <hr />
+          <p className="text-lg mt-4">주최 :</p>
+          <StyledUl>
+            <Styledli className="list-inside list-disc">
+              과학기술정보통신부 · 한국지능정보사회진흥원(NIA)
+            </Styledli>
+          </StyledUl>
+          <p className="text-lg mt-4">주관 :</p>
+          <StyledUl>
+            <Styledli className="list-inside list-disc">
+              (주)써로마인드 · KAIST · (주)테디썸 · (주)유클리드소프트
+            </Styledli>
+          </StyledUl>
+          <p className="mt-4 mb-2">
+            본 경진대회는 과학기술정보통신부가 주관하고,
+            한국지능정보사회진흥원이 지원하는 인공지능 학습용 데이터 구축 사업 -
+            비디오 네러티브 질의응답 데이터 과제의 지원을 받았습니다.
+          </p>
+          <div class="flex flex-wrap justify-around mt-10 text-center">
+            <img class="w-32" src={sit} alt="" />
+            <img class="w-32" src={nia} alt="" />
+            <img class="w-32" src={kaist} alt="" />
+          </div>
         </div>
       </div>
     </>

@@ -6,9 +6,7 @@ import Ground from './OutlineComponents/Ground';
 function Outline() {
   return (
     <div>
-      <Navbar />
       <Ground />
-      <Footer />
     </div>
   );
 }
