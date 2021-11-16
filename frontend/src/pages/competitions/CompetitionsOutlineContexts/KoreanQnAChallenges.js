@@ -60,7 +60,19 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
             </Styledli>
           </StyledUl>
           <hr />
-          <p className="mt-4 mb-2 text-lg">3. 유의사항</p>{' '}
+          <p className="mt-4 mb-2 text-lg">3. 상금</p>{' '}
+          <StyledUl>
+            <Styledli className="list-inside list-disc">
+              {' '}
+              상금 및 시상규모
+            </Styledli>
+          </StyledUl>
+          ※ 총 상금 500만원 <br />
+          1위(최우수상) : 상금 300만원 (1팀) <br />
+          2등(우수상) : 상금 150만원 (1팀) <br />
+          3등(장려상) : 상금 50만원 (1팀) <br />
+          <hr />
+          <p className="mt-4 mb-2 text-lg">4. 유의사항</p>{' '}
           <StyledUl>
             <Styledli className="list-inside list-disc mb-2">
               {' '}
@@ -70,7 +82,7 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
             </Styledli>
           </StyledUl>
           <hr />
-          <p className="mt-4 mb-2 text-lg">4. 참가신청</p>{' '}
+          <p className="mt-4 mb-2 text-lg">5. 참가신청</p>{' '}
           <StyledUl>
             <Styledli className="list-inside list-disc mb-2">
               {' '}
