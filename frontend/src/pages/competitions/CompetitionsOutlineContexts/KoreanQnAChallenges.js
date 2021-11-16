@@ -68,9 +68,9 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
             </Styledli>
           </StyledUl>
           ※ 총 상금 500만원 <br />
-          1위(최우수상) : 상금 300만원 (1팀) <br />
-          2등(우수상) : 상금 150만원 (1팀) <br />
-          3등(장려상) : 상금 50만원 (1팀) <br />
+          <p className="ml-4">1위(최우수상) : 상금 300만원 (1팀)</p>
+          <p className="ml-4">2등(우수상) : 상금 150만원 (1팀)</p>
+          <p className="ml-4">3등(장려상) : 상금 50만원 (1팀)</p>
           <hr />
           <p className="mt-4 mb-2 text-lg">4. 유의사항</p>{' '}
           <StyledUl>
