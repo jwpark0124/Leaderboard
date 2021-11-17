@@ -1,8 +1,12 @@
-﻿// import React from 'react';
+﻿import React from 'react';
+import Leaderboardground from './GroundComponents/Leaderboardground';
+function Leaderboard({ leaderboard }) {
+  //   const { data } = leaderboard;
+  return (
+    <div>
+      <Leaderboardground />
+    </div>
+  );
+}
 
-// function Leaderboard({ leaderboard }) {
-//   const { user, rank, score, round, submit } = leaderboard;
-//   return <div></div>;
-// }
-
-// export default Leaderboard;
+export default Leaderboard;

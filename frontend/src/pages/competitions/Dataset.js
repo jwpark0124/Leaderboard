@@ -1,10 +1,10 @@
 ﻿import React from 'react';
-import Ground from './DatasetComponents/Ground';
+import Dataground from './GroundComponents/Dataground';
 
 function Dataset() {
   return (
     <div>
-      <Ground />
+      <Dataground />
     </div>
   );
 }

@@ -24,11 +24,13 @@ export default function Login() {
       setFieldErrors({});
 
       const data = { username, password };
+
       try {
         const response = await axiosInstance.post('/account/token/', data);
         const {
           data: { token: jwtToken },
         } = response;
+        window.sessionStorage.setItem('username', data.username);
 
         dispatch(setToken(jwtToken));
 
@@ -36,7 +38,6 @@ export default function Login() {
           message: '로그인 성공',
           icon: <SmileOutlined style={{ color: '#108ee9' }} />,
         });
-
         history.push(loginRedirectUrl);
       } catch (error) {
         if (error.response) {
@@ -53,6 +54,7 @@ export default function Login() {
         }
       }
     }
+
     fn();
   };
 

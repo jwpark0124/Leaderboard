@@ -5,11 +5,6 @@ import Dataset from './Dataset';
 import Outline from './Outline';
 import Baseline from './Baseline';
 import Leaderboard from './Leaderboard';
-import LeaderboardList from './LeaderboardList';
-import Navbar from './CompetitionsLayoutComponents/Navbar';
-import Footer from './CompetitionsLayoutComponents/Footer';
-// import Poster from './OutlineComponents/Poster';
-// import Ground from './OutlineComponents/Ground';
 
 function Routes({ match }) {
   // const [{ data: postList, loading, error }, refetch] = useAxios({
@@ -26,11 +21,11 @@ function Routes({ match }) {
       <Route exact path={match.url + '/outline'} component={Outline} />
       <Route exact path={match.url + '/baseline'} component={Baseline} />
       <Route exact path={match.url + '/leaderboard'} component={Leaderboard} />
-      <Route
+      {/* <Route
         exact
         path={match.url + '/leaderboardlist'}
         component={LeaderboardList}
-      />
+      /> */}
     </>
   );
 }

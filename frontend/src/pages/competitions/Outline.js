@@ -1,12 +1,10 @@
-﻿import Footer from 'components/AppLayoutComponents/Footer';
-import Navbar from 'components/AppLayoutComponents/Navbar';
-import React from 'react';
-import Ground from './OutlineComponents/Ground';
+﻿import React from 'react';
+import Outlineground from './GroundComponents/Outlineground';
 
 function Outline() {
   return (
     <div>
-      <Ground />
+      <Outlineground />
     </div>
   );
 }

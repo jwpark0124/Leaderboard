@@ -5,7 +5,7 @@ import nia from '../../../../src/assets/NIA.jpg';
 import kaist from '../../../../src/assets/한국판뉴딜.png';
 import sit from '../../../../src/assets/과학기술정보통신부.jpg';
 
-function KoreanQnAChallenges({ koreanQnAChallenges }) {
+function DatasetContexts({ DatasetContexts }) {
   const StyledUl = styled.ul``;
   const Styledli = styled.li``;
   const lt = '<';
@@ -61,4 +61,4 @@ function KoreanQnAChallenges({ koreanQnAChallenges }) {
   );
 }
 
-export default KoreanQnAChallenges;
+export default DatasetContexts;

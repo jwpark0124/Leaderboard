@@ -7,13 +7,12 @@ import {
   faDatabase,
   faCode,
   faClipboardList,
-  faQuestionCircle,
   faUpload,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import KoreanQnAChallenges from '../CompetitionsOutlineContexts/KoreanQnAChallenges';
+import DatasetContexts from '../CompetitionsContexts/DatasetContexts';
 
-function Ground() {
+function Dataground() {
   // const [{ data: postList, loading, error }, refetch] = useAxios({
   //   url: 'http://localhost:8000/api/posts/',
   // });
@@ -55,18 +54,15 @@ function Ground() {
                 베이스라인
               </span>
             </div>
-            <div className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5">
+            <Link
+              to="/competitions/leaderboard"
+              className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
+            >
               <FontAwesomeIcon icon={faClipboardList} />
               <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
                 리더보드
               </span>
-            </div>
-            <div className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5">
-              <FontAwesomeIcon icon={faQuestionCircle} />
-              <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
-                Q&A
-              </span>
-            </div>
+            </Link>
           </div>
           <div className="text-white rounded-lg w-17 lg:w-20 h-6 lg:h-8  text-xs bg-yellow-500 text-center align-middle pt-1 lg:pt-2">
             <FontAwesomeIcon icon={faUpload} />
@@ -74,7 +70,8 @@ function Ground() {
           </div>
         </div>
         <div className="bg-white w-2/3  flex flex-col rounded-b-3xl mb-20">
-          <KoreanQnAChallenges />
+          <DatasetContexts />
+
           {/* {postList &&
             postList.map((koreanQnAChallenges) => {
               return (
@@ -90,4 +87,4 @@ function Ground() {
   );
 }
 
-export default Ground;
+export default Dataground;

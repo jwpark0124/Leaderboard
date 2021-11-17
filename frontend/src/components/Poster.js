@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 function Poster({ poster }) {
-  // const { photo, title, explanation, caption, state, award } = poster;
+  const { photo, title, explanation, caption, state, award } = poster;
 
   return (
     <>
