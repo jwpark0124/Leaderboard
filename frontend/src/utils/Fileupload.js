@@ -12,7 +12,7 @@ function Fileupload() {
     console.log(aValue);
     const formData = new FormData();
 
-    formData.append('userfile', selectedFile, aValue);
+    formData.append('userfile', selectedFile, selectedFile.name);
 
     axios
       .post('http://143.248.135.30:3194/uploadfile', formData)
