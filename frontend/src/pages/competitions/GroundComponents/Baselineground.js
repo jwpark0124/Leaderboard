@@ -1,8 +1,7 @@
 ﻿import React, { useState } from 'react';
 import useAxios from 'axios-hooks';
-import Poster from '../GroundComponents/Poster';
+import Poster from './Poster';
 import { Link } from 'react-router-dom';
-
 import {
   faCube,
   faDatabase,
@@ -11,11 +10,9 @@ import {
   faUpload,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import LeaderboardContexts from '../CompetitionsContexts/LeaderboardContexts';
-import LeaderboardList from '../CompetitionsContexts/LeaderboardContexts';
-import Fileupload from 'utils/Fileupload';
+import BaselineContexts from '../CompetitionsContexts/BaselineContexts';
 
-function Leaderboardground() {
+function Baselineground() {
   // const [{ data: postList, loading, error }, refetch] = useAxios({
   //   url: 'http://localhost:8000/api/posts/',
   // });
@@ -70,10 +67,10 @@ function Leaderboardground() {
               </span>
             </Link>
           </div>
-          <Fileupload />
         </div>
         <div className="bg-white w-3/4  flex flex-col rounded-b-3xl mb-20">
-          <LeaderboardList />
+          <BaselineContexts />
+
           {/* {postList &&
             postList.map((koreanQnAChallenges) => {
               return (
@@ -89,4 +86,4 @@ function Leaderboardground() {
   );
 }
 
-export default Leaderboardground;
+export default Baselineground;

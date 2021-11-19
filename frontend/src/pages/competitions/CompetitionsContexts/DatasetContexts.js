@@ -4,7 +4,6 @@ import kqcimg from '../../../assets/koreanQnAChallenges.png';
 import nia from '../../../../src/assets/NIA.jpg';
 import kaist from '../../../../src/assets/한국판뉴딜.png';
 import sit from '../../../../src/assets/과학기술정보통신부.jpg';
-import dataStructure from '../../../../src/assets/data_structure.png';
 
 function DatasetContexts({ DatasetContexts }) {
   const StyledUl = styled.ul``;
@@ -15,8 +14,45 @@ function DatasetContexts({ DatasetContexts }) {
     <>
       <div className="mb-12">
         <div className="mt-6 mx-4">
-          <div className="mt-6  text-lg">데이터 구조</div>
-          <img className="my-4 mx-auto" src={dataStructure} alt="" />
+          <div className="my-6  text-lg">데이터 구조</div>
+          <div className="ml-6">
+            <pre>{'{사용자 지정 경로}/원천데이터'} </pre>
+
+            <StyledUl className="mb-2">
+              <Styledli className="list-inside ml-52 mb-1">
+                {' '}
+                ㄴ예능교양
+              </Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X </Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본O</Styledli>
+              <Styledli className="list-inside ml-52 mb-1"> ㄴ스포츠</Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X</Styledli>
+              <Styledli className="list-inside ml-52 mb-1">
+                {' '}
+                ㄴ생활안전
+              </Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X</Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본O</Styledli>
+            </StyledUl>
+
+            <pre>{`{사용자 지정 경로}/라벨링데이터`}</pre>
+            <StyledUl className="mb-2">
+              <Styledli className="list-inside ml-52 mb-1">
+                {' '}
+                ㄴ예능교양
+              </Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X </Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본O</Styledli>
+              <Styledli className="list-inside ml-52 mb-1"> ㄴ스포츠</Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X</Styledli>
+              <Styledli className="list-inside ml-52 mb-1">
+                {' '}
+                ㄴ생활안전
+              </Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X</Styledli>
+              <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본O</Styledli>
+            </StyledUl>
+          </div>
           <StyledUl className="mb-2">
             <Styledli className="list-inside list-disc">
               데이터 다운로드 및 feature 파일 다운로드는 “베이스라인”
@@ -34,7 +70,6 @@ function DatasetContexts({ DatasetContexts }) {
           </StyledUl>
           <hr />
           <div className="mt-6 text-lg">데이터셋 설명</div>
-
           <StyledUl className="mb-2">
             <Styledli className="list-inside list-disc mb-1">
               {' '}

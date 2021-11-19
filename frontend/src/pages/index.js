@@ -15,8 +15,8 @@ function Root() {
     <>
       <Navbar />
       <Route exact path="/Home" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route path="/account" component={AccountsRoutes} />
+      {/* <Route exact path="/about" component={About} /> */}
+      {/* <Route path="/account" component={AccountsRoutes} /> */}
       <Route path="/competitions" component={CompetitionsRoutes} />
       <Route exact path="/" component={Outline} />
       <Footer />

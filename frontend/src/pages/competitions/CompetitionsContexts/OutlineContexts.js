@@ -7,7 +7,7 @@ import aiposter from '../../../../src/assets/AI_challenges_poster.jpg';
 import nia from '../../../../src/assets/NIA.jpg';
 import kaist from '../../../../src/assets/한국판뉴딜.png';
 import sit from '../../../../src/assets/과학기술정보통신부.jpg';
-import submitJsonTest from '../../../../src/assets/test.json';
+import submitJsonTest from '../../../../src/assets/test.json.zip';
 
 function OutlineContexts({ OutlineContexts }) {
   // const { title, explanation } = OutlineContexts;
@@ -60,10 +60,8 @@ function OutlineContexts({ OutlineContexts }) {
               *
               <a
                 className="underline text-blue-500 "
-                href={`data:text/json;charset=utf-8,${encodeURIComponent(
-                  JSON.stringify({ submitJsonTest })
-                )}`}
-                download="test.json"
+                href={submitJsonTest}
+                download
               >
                 첨부
               </a>

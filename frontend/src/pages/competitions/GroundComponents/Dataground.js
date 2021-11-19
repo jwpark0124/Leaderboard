@@ -48,12 +48,15 @@ function Dataground() {
                 데이터
               </span>
             </Link>
-            <div className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5">
+            <Link
+              to="/competitions/baseline"
+              className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
+            >
               <FontAwesomeIcon icon={faCode} />
               <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
                 베이스라인
               </span>
-            </div>
+            </Link>
             <Link
               to="/competitions/leaderboard"
               className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
@@ -63,10 +66,6 @@ function Dataground() {
                 리더보드
               </span>
             </Link>
-          </div>
-          <div className="text-white rounded-lg w-17 lg:w-20 h-6 lg:h-8  text-xs bg-yellow-500 text-center align-middle pt-1 lg:pt-2">
-            <FontAwesomeIcon icon={faUpload} />
-            <button className="border-solid border-0 ml-1">제출하기</button>
           </div>
         </div>
         <div className="bg-white w-3/4  flex flex-col rounded-b-3xl mb-20">

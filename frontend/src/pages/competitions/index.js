@@ -11,10 +11,10 @@ function Routes({ match }) {
   //   url: 'http://localhost:8000/api/posts/',
   // });
 
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <>
       <Route exact path={match.url + '/dataset'} component={Dataset} />
