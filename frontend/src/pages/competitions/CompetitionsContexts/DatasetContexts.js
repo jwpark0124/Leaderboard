@@ -4,6 +4,7 @@ import kqcimg from '../../../assets/koreanQnAChallenges.png';
 import nia from '../../../../src/assets/NIA.jpg';
 import kaist from '../../../../src/assets/한국판뉴딜.png';
 import sit from '../../../../src/assets/과학기술정보통신부.jpg';
+import dataStructure from '../../../../src/assets/data_structure.png';
 
 function DatasetContexts({ DatasetContexts }) {
   const StyledUl = styled.ul``;
@@ -13,8 +14,27 @@ function DatasetContexts({ DatasetContexts }) {
   return (
     <>
       <div className="mb-12">
-        <div className="mt-6 ml-4 text-lg">데이터셋 설명</div>
         <div className="mt-6 mx-4">
+          <div className="mt-6  text-lg">데이터 구조</div>
+          <img className="my-4 mx-auto" src={dataStructure} alt="" />
+          <StyledUl className="mb-2">
+            <Styledli className="list-inside list-disc">
+              데이터 다운로드 및 feature 파일 다운로드는 “베이스라인”
+              코드의&nbsp;
+              <a
+                className="font-bold	"
+                href="https://github.com/Surromind-AI/videonarrative/blob/main/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                README
+              </a>
+              &nbsp; 참고
+            </Styledli>
+          </StyledUl>
+          <hr />
+          <div className="mt-6 text-lg">데이터셋 설명</div>
+
           <StyledUl className="mb-2">
             <Styledli className="list-inside list-disc mb-1">
               {' '}

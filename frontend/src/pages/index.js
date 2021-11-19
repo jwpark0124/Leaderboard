@@ -7,7 +7,7 @@ import AccountsRoutes from './account';
 
 import CompetitionsRoutes from './competitions';
 import Outline from './competitions/Outline';
-import Navbar from './competitions/CompetitionsLayoutComponents/Navbar';
+import Navbar from 'components/AppLayoutComponents/Navbar';
 import Footer from 'components/AppLayoutComponents/Footer';
 
 function Root() {

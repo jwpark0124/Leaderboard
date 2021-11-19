@@ -25,10 +25,10 @@ function Dataground() {
           postList.map((poster) => {
             return <Poster poster={poster} key={poster.user} />;
           })} */}
-        <div className="text-xl flex flex-wrap mt-10 p-0 justify-center items-center bg-red-300 w-2/3 rounded-t-2xl">
+        <div className="text-xl flex flex-wrap mt-10 p-0 justify-center items-center bg-red-300 w-3/4 rounded-t-2xl">
           진행중
         </div>
-        <div className="bg-white flex flex-wrap text-xs  md:text-sm lg:text-base  py-5 justify-center items-center w-2/3 border-solid border-b border-opacity-20 border-gray-500 sm:space-x-0  md:space-x-6 lg:space-x-32 xl:space-x-72 2xl:space-x-96">
+        <div className="bg-white flex flex-wrap text-xs  md:text-sm lg:text-base  py-5 justify-center items-center w-3/4 border-solid border-b border-opacity-20 border-gray-500 sm:space-x-0  md:space-x-6 lg:space-x-32 xl:space-x-72 2xl:space-x-96">
           <div className="flex">
             <Link
               to="/competitions/outline"
@@ -69,7 +69,7 @@ function Dataground() {
             <button className="border-solid border-0 ml-1">제출하기</button>
           </div>
         </div>
-        <div className="bg-white w-2/3  flex flex-col rounded-b-3xl mb-20">
+        <div className="bg-white w-3/4  flex flex-col rounded-b-3xl mb-20">
           <DatasetContexts />
 
           {/* {postList &&
