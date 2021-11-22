@@ -4,10 +4,9 @@
 import styled from 'styled-components';
 import submit from '../../../../src/assets/해커톤_참가신청서.hwp';
 import aiposter from '../../../../src/assets/AI_challenges_poster.jpg';
-import nia from '../../../../src/assets/NIA.jpg';
-import kaist from '../../../../src/assets/한국판뉴딜.png';
-import sit from '../../../../src/assets/과학기술정보통신부.jpg';
+
 import submitJsonTest from '../../../../src/assets/test.json.zip';
+import ContextBottom from 'components/AppLayoutComponents/ContextBottom';
 
 function OutlineContexts({ OutlineContexts }) {
   // const { title, explanation } = OutlineContexts;
@@ -18,7 +17,7 @@ function OutlineContexts({ OutlineContexts }) {
     <>
       {/* {temp.data} */}
       <div className="mb-12">
-        <div className="mt-6 ml-4 text-base md:text-xl lg:text-2xl font-bold">
+        <div className="mt-6 mx-4 text-base md:text-xl lg:text-2xl font-bold">
           2021 한국어 질의응답 AI 경진대회: 비디오 네러티브 질의응답 태스크
           {/* {title} */}
         </div>
@@ -209,15 +208,7 @@ function OutlineContexts({ OutlineContexts }) {
             비디오 네러티브 질의응답 데이터 과제의 지원을 받았습니다.
           </p>
           <hr />
-          <div className="flex flex-wrap justify-around mt-10 text-center">
-            <img className="h-6 md:h-10 lg:h-16" src={sit} alt="" />
-            <img className="pt-1 lg:pt-4 h-4 md:h-8 lg:h-12" src={nia} alt="" />
-            <img
-              className="pt-1 lg:pt-4 h-4 md:h-8 lg:h-12"
-              src={kaist}
-              alt=""
-            />
-          </div>
+          <ContextBottom />
         </div>
       </div>
     </>
