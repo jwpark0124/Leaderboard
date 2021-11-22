@@ -4,6 +4,7 @@ import kqcimg from '../../../assets/koreanQnAChallenges.png';
 import nia from '../../../../src/assets/NIA.jpg';
 import kaist from '../../../../src/assets/한국판뉴딜.png';
 import sit from '../../../../src/assets/과학기술정보통신부.jpg';
+import datastructure from '../../../../src/assets/datastructure.png';
 
 function DatasetContexts({ DatasetContexts }) {
   const StyledUl = styled.ul``;
@@ -14,11 +15,19 @@ function DatasetContexts({ DatasetContexts }) {
     <>
       <div className="mb-12">
         <div className="mt-6 mx-4">
-          <div className="my-6  text-lg">데이터 구조</div>
-          <div className="ml-6">
+          <div className="mt-6 text-base md:text-xl lg:text-2xl font-bold">
+            데이터 구조
+          </div>
+          <img
+            class="w-4/5 md:w-1/2 justify-center ml-12"
+            src={datastructure}
+            alt=""
+          />
+
+          {/* <div className="ml-6">
             <pre>{'{사용자 지정 경로}/원천데이터'} </pre>
 
-            <StyledUl className="mb-2">
+            <StyledUl className="mb-2 overflow-visible">
               <Styledli className="list-inside ml-52 mb-1">
                 {' '}
                 ㄴ예능교양
@@ -52,7 +61,7 @@ function DatasetContexts({ DatasetContexts }) {
               <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본X</Styledli>
               <Styledli className="list-inside ml-72 mb-1"> ㄴ 대본O</Styledli>
             </StyledUl>
-          </div>
+          </div> */}
           <StyledUl className="mb-2">
             <Styledli className="list-inside list-disc">
               데이터 다운로드 및 feature 파일 다운로드는 “베이스라인”
@@ -69,7 +78,9 @@ function DatasetContexts({ DatasetContexts }) {
             </Styledli>
           </StyledUl>
           <hr />
-          <div className="mt-6 text-lg">데이터셋 설명</div>
+          <div className="mt-6  text-base md:text-xl lg:text-2xl font-bold mb-4">
+            데이터셋 설명
+          </div>
           <StyledUl className="mb-2">
             <Styledli className="list-inside list-disc mb-1">
               {' '}
@@ -100,15 +111,21 @@ function DatasetContexts({ DatasetContexts }) {
             </Styledli>
           </StyledUl>
           <hr />
-          <p className="mt-2">
+          <p className="mt-2 mb-3">
             {' '}
             {lt}참고화면{gt}
           </p>
-          <img src={kqcimg} alt="" />
-          <div class="flex flex-wrap justify-around mt-10 text-center">
-            <img class="w-32" src={sit} alt="" />
-            <img class="w-32" src={nia} alt="" />
-            <img class="w-32" src={kaist} alt="" />
+
+          <img className="pb-3" src={kqcimg} alt="" />
+          <hr />
+          <div className="flex flex-wrap justify-around mt-10 text-center">
+            <img className="h-6 md:h-10 lg:h-16" src={sit} alt="" />
+            <img className="pt-1 lg:pt-4 h-4 md:h-8 lg:h-12" src={nia} alt="" />
+            <img
+              className="pt-1 lg:pt-4 h-4 md:h-8 lg:h-12"
+              src={kaist}
+              alt=""
+            />
           </div>
         </div>
       </div>

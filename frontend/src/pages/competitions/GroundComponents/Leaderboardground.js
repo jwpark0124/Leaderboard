@@ -1,24 +1,29 @@
-﻿import React, { useState } from 'react';
-import useAxios from 'axios-hooks';
-import Poster from '../GroundComponents/Poster';
-import { Link } from 'react-router-dom';
+﻿import LeaderboardList from '../CompetitionsContexts/LeaderboardContexts';
 
-import {
-  faCube,
-  faDatabase,
-  faCode,
-  faClipboardList,
-  faUpload,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import LeaderboardContexts from '../CompetitionsContexts/LeaderboardContexts';
-import LeaderboardList from '../CompetitionsContexts/LeaderboardContexts';
-import Fileupload from 'utils/Fileupload';
+import Poster from './Poster';
+import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
+import outline2 from '../../../assets/outline2.png';
+import outline from '../../../assets/outline.png';
+import data2 from '../../../assets/data2.png';
+import data from '../../../assets/data.png';
+import baseline2 from '../../../assets/baseline2.png';
+import baseline from '../../../assets/baseline.png';
+import leaderboard2 from '../../../assets/leaderboard2.png';
+import leaderboard from '../../../assets/leaderboard.png';
+// import Fileupload from 'utils/Fileupload';
 
 function Leaderboardground() {
   // const [{ data: postList, loading, error }, refetch] = useAxios({
   //   url: 'http://localhost:8000/api/posts/',
   // });
+
+  const isWep = useMediaQuery({
+    query: '(min-width : 768px) and (max-width :1920px)',
+  });
+  const isMobile = useMediaQuery({
+    query: '(min-width :0px) and (max-width :767px)',
+  });
 
   return (
     <>
@@ -28,52 +33,46 @@ function Leaderboardground() {
           postList.map((poster) => {
             return <Poster poster={poster} key={poster.user} />;
           })} */}
-        <div className="text-xl flex flex-wrap mt-10 p-0 justify-center items-center bg-red-300 w-3/4 rounded-t-2xl">
+        <div className="text-xl flex flex-wrap mt-10 justify-center items-center bg-red-300 w-3/4 rounded-t-2xl">
           진행중
         </div>
-        <div className="bg-white flex flex-wrap text-xs  md:text-sm lg:text-base  py-5 justify-center items-center w-3/4 border-solid border-b border-opacity-20 border-gray-500 sm:space-x-0  md:space-x-6 lg:space-x-32 xl:space-x-72 2xl:space-x-96">
-          <div className="flex">
-            <Link
-              to="/competitions/outline"
-              className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
-            >
-              <FontAwesomeIcon icon={faCube} />
-              <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
-                개요
-              </span>
-            </Link>
-            <Link
-              to="/competitions/dataset"
-              className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
-            >
-              <FontAwesomeIcon icon={faDatabase} />
-              <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
-                데이터
-              </span>
-            </Link>
-            <Link
-              to="/competitions/baseline"
-              className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
-            >
-              <FontAwesomeIcon icon={faCode} />
-              <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
-                베이스라인
-              </span>
-            </Link>
-            <Link
-              to="/competitions/leaderboard"
-              className="mr-0 sm:mr-5 md:mr-5 lg:mr-5 xl:mr-5 2xl:mr-5"
-            >
-              <FontAwesomeIcon icon={faClipboardList} />
-              <span className="ml-0 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2 2xl:ml-2">
-                리더보드
-              </span>
-            </Link>
+        <div className="bg-white p-2 w-3/4 border-solid border-b border-opacity-20 border-gray-500">
+          <div className="flex justify-center space-x-2 sm:space-x-8 md:space-x-20">
+            <div className="">
+              <Link to="/competitions/outline">
+                {isWep && <img className="w-12 h-5" src={outline2} alt="" />}
+                {isMobile && <img className="w-8 h-4" src={outline} alt="" />}
+              </Link>
+            </div>
+            <div>
+              <Link to="/competitions/dataset">
+                {isWep && <img className="w-16 h-5" src={data2} alt="" />}
+                {isMobile && <img className="w-10 h-4" src={data} alt="" />}
+              </Link>
+            </div>
+            <div>
+              <Link to="/competitions/baseline">
+                {isWep && <img className="w-27 h-5" src={baseline2} alt="" />}
+                {isMobile && <img className="w-16 h-4" src={baseline} alt="" />}
+              </Link>
+            </div>
+            <div>
+              <Link to="/competitions/leaderboard">
+                {isWep && (
+                  <img className="w-25 h-5" src={leaderboard2} alt="" />
+                )}
+                {isMobile && (
+                  <img className="w-14 h-4" src={leaderboard} alt="" />
+                )}
+              </Link>
+            </div>
           </div>
-          <Fileupload />
         </div>
-        <div className="bg-white w-3/4  flex flex-col rounded-b-3xl mb-20">
+
+        <div className="bg-white w-3/4  flex flex-col rounded-b-3xl mb-20 ">
+          {/* <Fileupload /> */}
           <LeaderboardList />
+
           {/* {postList &&
             postList.map((koreanQnAChallenges) => {
               return (

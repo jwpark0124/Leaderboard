@@ -18,7 +18,7 @@ function OutlineContexts({ OutlineContexts }) {
     <>
       {/* {temp.data} */}
       <div className="mb-12">
-        <div className="mt-6 ml-4 md:text-md lg:text-lg">
+        <div className="mt-6 ml-4 text-base md:text-xl lg:text-2xl font-bold">
           2021 한국어 질의응답 AI 경진대회: 비디오 네러티브 질의응답 태스크
           {/* {title} */}
         </div>
@@ -29,7 +29,7 @@ function OutlineContexts({ OutlineContexts }) {
         <img className="mt-6 mx-auto w-3/6 " src={aiposter} alt="" />
 
         <div className="mt-8 mx-4">
-          <p className="mb-2 text-lg">1. 개요</p>{' '}
+          <p className="mb-2 text-lg font-bold">1. 개요</p>{' '}
           <p>
             비디오 네러티브 질의응답이란 영상(4~5초)에 대한 질문이 주어졌을 때
             해당 질문에 대한 답을 보기에서 찾는 태스크로서, 기존의 이미지에 대한
@@ -43,7 +43,7 @@ function OutlineContexts({ OutlineContexts }) {
             예를 들어, 빨간색 유니폼을 입은 선수가 오른쪽으로 뛰는 영상에 대해
             다음과 같은 질문과 보기가 주어짐.
           </p>
-          <StyledUl>
+          <StyledUl className="pb-3">
             <Styledli className="list-inside mt-4 list-disc">
               {' '}
               질문: 오른쪽으로 뛰는 사람이 어떤 옷을 입었습니까?
@@ -53,7 +53,7 @@ function OutlineContexts({ OutlineContexts }) {
             </Styledli>
           </StyledUl>
           <hr />
-          <p className="mt-4 mb-2 text-lg">2. 과제</p> <p></p>
+          <p className="mt-4 mb-2 text-lg font-bold">2. 과제</p> <p></p>
           제출 방법{' '}
           <StyledUl>
             <Styledli className="list-inside list-disc">
@@ -61,7 +61,7 @@ function OutlineContexts({ OutlineContexts }) {
               <a
                 className="underline text-blue-500 "
                 href={submitJsonTest}
-                download
+                download="test.json"
               >
                 첨부
               </a>
@@ -105,12 +105,12 @@ function OutlineContexts({ OutlineContexts }) {
               주어진 영상, 영상요약문, 질문을 활용하여, 보기의 정답 후보 중 가장
               적합한 정답을 선택하는 문제
             </Styledli>
-            <Styledli className="list-inside list-disc mb-2">
+            <Styledli className="list-inside list-disc pb-3">
               평가 지표에는 accuracy가 활용됩니다
             </Styledli>
           </StyledUl>
           <hr />
-          <p className="mt-4 mb-2 text-lg">3. 상금</p>{' '}
+          <p className="mt-4 mb-2 text-lg font-bold">3. 상금</p>{' '}
           <StyledUl>
             <Styledli className="list-inside list-disc">
               {' '}
@@ -120,19 +120,9 @@ function OutlineContexts({ OutlineContexts }) {
           ※ 총 상금 500만원 <br />
           <p className="ml-4">1위(최우수상) : 상금 300만원 (1팀)</p>
           <p className="ml-4">2등(우수상) : 상금 150만원 (1팀)</p>
-          <p className="ml-4">3등(장려상) : 상금 50만원 (1팀)</p>
+          <p className="ml-4 pb-3">3등(장려상) : 상금 50만원 (1팀)</p>
           <hr />
-          <p className="mt-4 mb-2 text-lg">4. 유의사항</p>{' '}
-          <StyledUl>
-            <Styledli className="list-inside list-disc mb-2">
-              {' '}
-              본 경진대회에 참가신청이 수락된 경우에만 데이터가 제공되며, 상기
-              데이터는 본 대회의 참가 목적으로만 사용할 수 있으며 다른
-              목적으로는 사용 불가함
-            </Styledli>
-          </StyledUl>
-          <hr />
-          <p className="mt-4 mb-2 text-lg">5. 참가신청</p>{' '}
+          <p className="mt-4 pb-3 text-lg font-bold">4. 참가신청</p>{' '}
           <StyledUl>
             <Styledli className="list-inside list-disc mb-2">
               {' '}
@@ -144,7 +134,7 @@ function OutlineContexts({ OutlineContexts }) {
             </Styledli>
 
             <hr />
-            <p className="mt-4 mb-2 text-lg">6. 유의사항/기타</p>
+            <p className="mt-4 mb-2 text-lg font-bold">5. 유의사항/기타</p>
             <p className="py-1">
               산출물에 대한 일체의 권리는 응모자에게 귀속되며, 입선작의
               소스코드에 한해 오픈소스 라이선스로 공개되어야 함을 알려드립니다.{' '}
@@ -192,7 +182,7 @@ function OutlineContexts({ OutlineContexts }) {
                 원칙적으로 저작자인 입상자의 성명을 표시하고, 입상작의 내용·형식
                 및 제호의 동일성을 유지하여야 한다.
               </Styledli>
-              <Styledli className="list-inside px-2 py-1">
+              <Styledli className="list-inside px-2 py-1 pb-3">
                 10) 주최자는 응모작을 접수할 때 응모작 반환 여부에 대한 응모자의
                 의사를 확인하는 절차를 마련하여 저작자가 저작물의 반환을 요구할
                 경우 저작자에게 반환하되, 반환과 관련한 추가 비용이 발생하는
@@ -201,27 +191,32 @@ function OutlineContexts({ OutlineContexts }) {
             </StyledUl>
           </StyledUl>
           <hr />
-          <p className="text-lg mt-4">주최 :</p>
+          <p className="text-lg mt-4 font-bold">주최 :</p>
           <StyledUl>
             <Styledli className="list-inside list-disc">
               과학기술정보통신부 · 한국지능정보사회진흥원(NIA)
             </Styledli>
           </StyledUl>
-          <p className="text-lg mt-4">주관 :</p>
+          <p className="text-lg mt-4 font-bold">주관 :</p>
           <StyledUl>
             <Styledli className="list-inside list-disc">
               (주)써로마인드 · KAIST · (주)테디썸 · (주)유클리드소프트
             </Styledli>
           </StyledUl>
-          <p className="mt-4 mb-2">
+          <p className="mt-4 mb-3">
             본 경진대회는 과학기술정보통신부가 주관하고,
             한국지능정보사회진흥원이 지원하는 인공지능 학습용 데이터 구축 사업 -
             비디오 네러티브 질의응답 데이터 과제의 지원을 받았습니다.
           </p>
+          <hr />
           <div className="flex flex-wrap justify-around mt-10 text-center">
-            <img className="w-32" src={sit} alt="" />
-            <img className="w-32" src={nia} alt="" />
-            <img className="w-32" src={kaist} alt="" />
+            <img className="h-6 md:h-10 lg:h-16" src={sit} alt="" />
+            <img className="pt-1 lg:pt-4 h-4 md:h-8 lg:h-12" src={nia} alt="" />
+            <img
+              className="pt-1 lg:pt-4 h-4 md:h-8 lg:h-12"
+              src={kaist}
+              alt=""
+            />
           </div>
         </div>
       </div>

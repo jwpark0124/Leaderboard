@@ -1,11 +1,21 @@
 ﻿import React, { useState } from 'react';
 import axios from 'axios';
-
+import upload from '../assets/upload.png';
+import upload2 from '../assets/upload2.png';
+import { useMediaQuery } from 'react-responsive';
 function Fileupload() {
   const [selectedFile, setSelectedFile] = useState(null);
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
   };
+
+  const isWep = useMediaQuery({
+    query: '(min-width : 768px) and (max-width :1920px)',
+  });
+  const isMobile = useMediaQuery({
+    query: '(min-width :0px) and (max-width :767px)',
+  });
+
   // formData라는 instance에 담아 보냄
   const handleFileUpload = () => {
     const aValue = sessionStorage.getItem('username');
@@ -26,8 +36,31 @@ function Fileupload() {
 
   return (
     <>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleFileUpload}>업로드</button>
+      <div className="justify-end flex flex-wrap pr-7">
+        <input
+          className="w-28 h-5 md:w-44 lg:h-7"
+          type="file"
+          onChange={handleFileChange}
+        />
+        {isWep && (
+          <img
+            className="h-7"
+            src={upload2}
+            onClick={handleFileUpload}
+            on
+            alt=""
+          />
+        )}
+        {isMobile && (
+          <img
+            className="h-5"
+            src={upload}
+            onClick={handleFileUpload}
+            on
+            alt=""
+          />
+        )}
+      </div>
     </>
   );
 }

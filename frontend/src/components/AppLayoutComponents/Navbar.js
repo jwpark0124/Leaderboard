@@ -8,7 +8,7 @@ const Navbar = ({}) => {
       className="flex justify-between items-center h-16 text-black shadow-sm font-mono fixed min-w-full"
       role="navigation"
     >
-      <Link to="/competitions/outline" className="pl-8">
+      <Link to="/competitions/outline" className=" pl-8">
         AI Hackathon
       </Link>
 

@@ -1,20 +1,31 @@
 ﻿import React from 'react';
 import teddy_log from '../../assets/teddysum_logo.png';
+import { useMediaQuery } from 'react-responsive';
 
 const Footer = () => {
   const thisYear = () => {
     const year = new Date().getFullYear();
     return year;
   };
+
+  const isWep = useMediaQuery({
+    query: '(min-width : 768px) and (max-width :1920px)',
+  });
+  const isMobile = useMediaQuery({
+    query: '(min-width :0px) and (max-width :767px)',
+  });
   return (
     <>
-      <div className="flex pl-32 p-5 items-center bg-black text-white">
+      <div className="flex items-center bg-black text-white pl-16 p-3 sm:pl-28 sm:p-4 md:pl-32  md:p-5  lg:pl-44 lg:p-5 ">
         <ul>
           <button onClick={() => window.open('http://teddysum.ai/', '_blank')}>
-            <img className="w-28  " src={teddy_log} alt="" />
+            {isWep && <img className="h-7" src={teddy_log} alt="" />}
+            {isMobile && <img className="h-4" src={teddy_log} alt="" />}
           </button>
 
-          <li>(주) 테디썸 | ⓒ{thisYear()} All rights reserved.</li>
+          <li className="text-xs md:text-base">
+            (주) 테디썸 | ⓒ{thisYear()} All rights reserved.
+          </li>
         </ul>
       </div>
     </>
