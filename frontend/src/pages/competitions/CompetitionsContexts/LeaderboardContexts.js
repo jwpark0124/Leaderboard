@@ -17,7 +17,7 @@ function LeaderboardList() {
       <div className="mt-6 text-base md:text-xl lg:text-2xl font-bold  mx-4 mb-3">
         리더보드
       </div>
-      <Fileupload />
+      {/* <Fileupload /> */}
       <div className="mb-12 mt-3">
         <table className="table-fixed justify-center items-center text-center w-full">
           <thead className="bg-gray-100 border-t border-black border-opacity-50 not-italic">

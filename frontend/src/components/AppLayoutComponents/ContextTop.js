@@ -13,6 +13,7 @@ import baseline2 from '../../assets/baseline2.png';
 import baseline from '../../assets/baseline.png';
 import leaderboard2 from '../../assets/leaderboard2.png';
 import leaderboard from '../../assets/leaderboard.png';
+import Fileupload from 'utils/Fileupload';
 
 function ContextTop(props) {
   const [isListHover, setIsListHover] = useState(false);
@@ -33,7 +34,7 @@ function ContextTop(props) {
         진행중
       </div>
       <div className="bg-white p-2 px-auto w-3/4 border-solid border-b border-opacity-20 border-gray-500">
-        <div className="flex justify-center space-x-2 sm:space-x-8 md:space-x-20">
+        <div className="flex justify-end space-x-2 sm:space-x-8 md:space-x-20">
           <div className="">
             <Link to="/competitions/outline">
               {isWep && (
@@ -122,6 +123,8 @@ function ContextTop(props) {
               )}
             </Link>
           </div>
+
+          <Fileupload />
         </div>
       </div>
     </>
