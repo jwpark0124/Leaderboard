@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import kqcimg from '../../../assets/koreanQnAChallenges.png';
 import datastructure from '../../../../src/assets/datastructure.png';
 import ContextBottom from 'components/AppLayoutComponents/ContextBottom';
+import Fileupload from 'utils/Fileupload';
 
 function DatasetContexts({ DatasetContexts }) {
   const StyledUl = styled.ul``;
@@ -13,6 +14,7 @@ function DatasetContexts({ DatasetContexts }) {
     <>
       <div className="mb-12">
         <div className="mt-6 mx-4">
+          <Fileupload />
           <div className="mt-6 text-base md:text-xl lg:text-2xl font-bold">
             데이터 구조
           </div>

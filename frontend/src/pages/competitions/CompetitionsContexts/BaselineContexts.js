@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
 import ContextBottom from 'components/AppLayoutComponents/ContextBottom';
+import Fileupload from 'utils/Fileupload';
 
 function BaselineContexts({ BaselineContexts }) {
   const StyledUl = styled.ul``;
@@ -11,6 +12,7 @@ function BaselineContexts({ BaselineContexts }) {
     <>
       <div className="mb-12">
         <div className="mt-6 mx-4">
+          <Fileupload />
           <div className="mt-6 text-base md:text-xl lg:text-2xl font-bold pb-3">
             베이스라인
           </div>
