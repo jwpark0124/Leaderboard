@@ -18,16 +18,18 @@ function Fileupload() {
 
   // formData라는 instance에 담아 보냄
   const handleFileUpload = (e) => {
-    const formData = new FormData();
     // const aValue = sessionStorage.getItem('username');
-    // console.log(aValue);
-
+    // console.log(aValue);const formData = new FormData();
+    const formData = new FormData();
     formData.append('userfile', selectedFile, selectedFile.name);
 
     axios
       .post('http://143.248.135.30:3194/uploadfile', formData)
       .then((res) => {
         console.log(res);
+        if (res.data === 'success') {
+          window.location.reload();
+        }
       })
       .catch((err) => {
         console.log(err);
