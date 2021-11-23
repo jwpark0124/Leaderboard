@@ -10,7 +10,7 @@ function Fileupload() {
   };
 
   const isWep = useMediaQuery({
-    query: '(min-width : 768px)',
+    query: '(min-width : 768px) and (max-width :1920px)',
   });
   const isMobile = useMediaQuery({
     query: '(min-width :0px) and (max-width :767px)',
