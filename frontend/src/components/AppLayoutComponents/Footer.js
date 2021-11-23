@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   const isWep = useMediaQuery({
-    query: '(min-width : 768px) and (max-width :1920px)',
+    query: '(min-width : 768px)',
   });
   const isMobile = useMediaQuery({
     query: '(min-width :0px) and (max-width :767px)',

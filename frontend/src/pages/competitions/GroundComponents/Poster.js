@@ -9,7 +9,7 @@ function Poster({ poster }) {
   // const { title, explanation, host, period1, period2, award, Participant } =
   //   poster;
   const isWep = useMediaQuery({
-    query: '(min-width : 768px) and (max-width :1920px)',
+    query: '(min-width : 768px)',
   });
   const isMobile = useMediaQuery({
     query: '(min-width :0px) and (max-width :767px)',
