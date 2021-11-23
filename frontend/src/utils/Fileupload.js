@@ -10,7 +10,7 @@ function Fileupload() {
   };
 
   const isWep = useMediaQuery({
-    query: '(min-width : 768px) and (max-width :1920px)',
+    query: '(min-width : 768px)',
   });
   const isMobile = useMediaQuery({
     query: '(min-width :0px) and (max-width :767px)',
@@ -18,9 +18,9 @@ function Fileupload() {
 
   // formData라는 instance에 담아 보냄
   const handleFileUpload = (e) => {
+    const formData = new FormData();
     // const aValue = sessionStorage.getItem('username');
     // console.log(aValue);
-    const formData = new FormData();
 
     formData.append('userfile', selectedFile, selectedFile.name);
 
